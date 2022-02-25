@@ -1,0 +1,6 @@
+tqdm>=4.62.3
+pyyaml>=5.4.1
+tensorboard>=2.7.0
+torch==1.6.0
+transformers>=4.16.2
+numpy>=1.19.5
