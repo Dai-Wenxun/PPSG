@@ -55,7 +55,7 @@ The `<model_saved_path>` is `./output/<task>/<model_name_or_path>/<local_time>`,
 ## Results
 <div align="center"><img src="images/results.png" /></div> 
 
-We use **BERT-base** as our backbone. For each dataset we randomly sample 1% training data as labeled corpus and left 99% as unlabeled data. For all datasets, we randomly choose three data splits and have three different runs for each of them to combat the instability by leveraging their results on development sets. As the table shows, PPSG consistently outperform finetuned baseline results across five different datasets, demonstrating its effectiveness on NLU tasks. Detailed results are summarized in Table 2.
+We use **BERT-base** as our backbone. For each dataset, we randomly sample 1% training data as labeled corpus and left 99% as unlabeled data. In addition, We randomly choose three data splits and have three different runs for each of them to combat the instability by leveraging their results on development sets. As the table shows, PPSG consistently outperform finetuned baseline results across five different datasets, demonstrating its effectiveness on NLU tasks. Detailed results are summarized in Table 2.
 
 ## Ablation study
 <div align="center"><img src="images/sst-2.png" /></div> 
