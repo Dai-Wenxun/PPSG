@@ -44,7 +44,7 @@ $ bash run.sh FT bert-base-uncased sst-2 0.01 0 0
 
 Note: Since pattern_id is not used during fine-tuning, you can pass in any integer.
 
-If you want to MLM on unlabeled data first, then fine-tune on labeled data, you should use the following commands:
+If you want to MLM on unlabeled data first, then FT on labeled data, you should use the following commands:
 ```
 $ bash run.sh MLM bert-base-uncased sst-2 0.99 0 0
 $ bash run.sh FT <model_saved_path> sst-2 0.01 0 0
