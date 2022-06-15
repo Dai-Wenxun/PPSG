@@ -58,6 +58,45 @@ The `<model_saved_path>` is `./output/<task>/<model_name_or_path>/<local_time>`,
 We use **BERT-base** as our backbone. For each dataset, we randomly sample 1% training data as labeled corpus and left 99% as unlabeled data. In addition, We randomly choose three data splits and have three different runs for each of them to combat the instability by leveraging their results on development sets. As the table shows, PPSG consistently outperform finetuned baseline results across five different datasets, demonstrating its effectiveness on NLU tasks. Detailed results are summarized in Table 2.
 
 ## Ablation study
+<table align="center">
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">MNLI</th>
+<th align="center">MNLI-mm</th>
+<th align="center">SST-2</th>
+<th align="center">QQP</th>
+<th align="center">QNLI</th>
+</tr>
+</thead>
+<tbody>
+ <tr>
+<td align="center">FT</td>
+<td align="center">59.20</td>
+<td align="center">58.19</td>
+<td align="center">87.49</td>
+<td align="center">71.84</td>
+<td align="center">79.39</td>
+</tr>
+<tr>
+<td align="center">FT+Random Mask</td>
+<td align="center">59.81</td>
+<td align="center">58.77</td>
+<td align="center">87.94</td>
+<td align="center">72.15</td>
+<td align="center">79.98</td>
+</tr>
+<tr>
+<td align="center">FT+Selective Mask</td>
+<td align="center">60.94</td>
+<td align="center">59.62</td>
+<td align="center">88.43</td>
+<td align="center">73.26</td>
+<td align="center">81.20</td>
+</tr>
+</tbody>
+</table>
+
 <div align="center"><img src="images/sst-2.png" /></div> 
 
 ---
