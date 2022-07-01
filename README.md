@@ -3,7 +3,7 @@ This repository contains my research work in collaboration with [Zhao Xin](http:
 
 
 ## Abstract
-Most of the current pre-trained models follow the pre-training-then-finetuning paradigm. However, since the task-agnostic nature of the pre-training stage, the finetuning stage usually suffers from performance degradation due to insufficient supervised data. In this research project, we propose **a novel paradigm of complementary task-oriented pre-training and generalization training named PPSG**. Specifically, we introduce the prompt training method. Experimental results on five language understanding tasks show that our method significantly improves model performance.
+Most of the current pre-trained models follow the pre-training-then-finetuning paradigm. However, since the task-agnostic nature of the pre-training stage, the finetuning stage usually suffers from performance degradation due to insufficient supervised data. In this research project, we propose **a novel paradigm of complementary task-oriented pre-training and generalization training named PPSG**. Specifically, we introduce the prompt training method to exploit prior knowledge of large pretrained models. Experimental results on five language understanding tasks show that our method significantly improves model performance.
 
 ## Pipeline of PPSG 
 <div align="center"><img src="images/pipeline.png" /></div> 
